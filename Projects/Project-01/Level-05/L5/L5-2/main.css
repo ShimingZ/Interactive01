@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+
+h1{
+	margin-right: 200px;
+	width: 90%;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	letter-spacing:5px;
+	text-align: right;
+}
+
+
+body{
+
+	background-color:white;
+}
+
+
+p{
+	width: 90%;
+	margin: 50px;
+	font-size:50px;
+	line-height: 3em;
+	color:#85929E;
+	font-family: verdana;
+	text-decoration: underline;
+	opacity: 0.4;
+}
+
+
+
+
+		.right{
+			text-align: right;
+			padding: 40px;
+		}
+		.info{
+		text-align: left;
+		width: 90%;
+		margin: 90px;
+		font-size: 20px;
+		color: black;
+		letter-spacing:5px;
+		font-style: serif;
+		text-decoration: line-through;
+		}

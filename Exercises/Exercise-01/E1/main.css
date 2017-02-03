@@ -1,0 +1,168 @@
+* {
+	box-sizing: content-box;
+}
+
+body{
+
+	background:white;
+}
+/*p{
+	margin: 60px;
+	font-size: 1em ; 
+	font-family: sans-serif;}*/
+
+.info{
+	width: 300px;
+	font-family:Futura;
+	text-transform:uppercase;
+	letter-spacing:3pt;
+	line-height:25pt;
+	font-size: 1em;
+	left: 37%; 
+	display: block;
+	position: fixed;
+	margin-bottom:500px;
+	padding: 20px;
+	background:#7f93c9;
+	opacity:0.5;
+	color: white;
+	z-index: auto;
+}
+
+.pattern-1{
+	height: 180px;
+	width: 800px;
+	margin: auto;
+	display: block;
+	/* create pattern-1 CSS here */
+}
+
+.pattern-2{	
+	position: relative;
+	width: 90%;
+	height: 400px;
+	margin: 100px auto;	
+	top: 310px;
+	left: 9px;
+	
+}
+.pattern-0{
+
+	position: fixed;
+	top:450px;
+	right: 100px;
+	height: 190%;
+	opacity: 0.3;
+	margin: 50px;
+							
+}
+
+/*.pattern-3{
+	height: 500px;*/
+
+.circle-2{
+	width: 1000px;
+	height: 1000px;
+	background: #000000;
+	-moz-border-radius: 1000px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	margin: -300px;
+	opacity:0.2;
+}
+
+.triangle-right{
+	width: 0;
+	height: 0;
+	border-top: 400px solid transparent;
+	border-left: 800px solid  #7f93c9;
+	border-bottom: 400px solid transparent;
+	margin: -100px;
+	opacity:0.3;
+}
+
+/*}*/
+	/* create pattern-3 CSS here */
+
+}
+
+.pattern-4{
+		position: absolute;
+		top:350px;
+		right: 100px;
+		height: 100%;
+		z-index: 100;	
+}
+
+.square{
+	transition:width 2s ease;
+	width: 50px;
+	height: 50px;
+	background: #000000;
+	float: left;
+	margin:10px;
+}
+.square:hover{
+	background:#ffffff
+}
+
+.circle-outline{
+	transition: width 1s ease,
+				height 1s ease,
+				-moz-border-radius 1s ease
+				-webkit-border-radius 1s ease
+				border-radius 1s ease;
+	width: 50px;
+	height: 50px;
+	border: 3px dotted #000000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	float: left;
+	margin:10px;
+}
+
+.circle{
+	width: 20px;
+	height: 20px;
+	background: #000000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	float: left;
+	margin: -10px;
+}
+
+.square1{
+	transition:width 2s ease;
+	width: 30px;
+	height: 70px;
+	background: #000000;
+	float: left;
+	margin: 15px;
+}
+
+.square-outline{
+	width: 30px;
+	height: 50px;
+	border: 3px dotted #000000;
+	float: left;
+	margin: -25px;
+}
+
+.left-corner {
+	width: 0;
+	height: 0;
+	border-right: 70px solid  transparent;
+	border-bottom: 40px solid #000000;
+	float: left;
+}
+.right-corner {
+	width: 0;
+	height: 0;
+	border-right: 70px solid  #000000;
+	border-bottom: 40px solid transparent;
+	float: left;
+}
+
+

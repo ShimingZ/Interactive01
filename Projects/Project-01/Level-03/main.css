@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+   body {
+     font-family: Helvetica;
+     color: #7DCEA0;
+     line-height: 1.5em;
+     background-color: white ;  
+     font-size: 20px
+}
+
+h1{
+      font-family: Helvetica;
+      margin-top: 0;
+      font-size: 20px;
+}
+
+.main{
+	width: 80%;
+	margin: 100px auto;
+	padding: 50px;
+}
+
+
+ul{
+	  padding-left: 18px;
+      list-style: none;
+      font-size: 20px;
+}
+ 
+ul li{
+      color: #7DCEA0;
+      font-size: 20px;
+}
+
+a:link{
+		color: #7DCEA0;
+		text-decoration: none;
+}
+
+a:hover{
+		background-color: #7DCEA0;
+}

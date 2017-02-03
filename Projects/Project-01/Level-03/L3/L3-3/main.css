@@ -1,0 +1,27 @@
+		p{
+		color: black;
+		font-size: 24px; 
+		text-align: left;
+		}
+
+		.spacing{padding:6px 10px;}
+
+		.box {
+		  background: #52BE80;
+		  width: 100px;
+		  height: 100px;
+		  margin: 30px;
+		  color: white;
+		}
+		#one {
+		  position: fixed;
+		  top: 80px;
+		  left: 10px;
+		}
+
+		.outer {
+		  width: 750px;
+		  height: 200px;
+		  overflow: scroll;
+		  padding-left: 150px;
+		}

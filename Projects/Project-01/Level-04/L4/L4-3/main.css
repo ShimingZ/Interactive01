@@ -1,0 +1,39 @@
+
+
+		p{
+		color: black;
+		font-family: Helvetica; 
+		font-weight: bold; 
+		font-size: 24px; 
+		text-transform: lowercase; 
+		text-align: left;	
+		text-decoration: underline;
+		letter-spacing:2px;}
+		
+		h1{
+			font-size: 1em;
+			color:#ABEBC6;}
+		}
+		.spacing{padding:6px 10px;}
+
+		.box {
+		  background: #52BE80;
+		  width: 100px;
+		  height: 700px;
+		  margin: 200px;
+		  color: white;
+		}
+		#one {
+		  position: fixed;
+		  top: 80px;
+		  left: 10px;
+		  text-transform: uppercase;
+		  text-decoration: line-through;
+		}
+
+		.outer {
+		  width: 950px;
+		  margin: 200px;
+		  height: 950px;
+		  padding-left: 150px;
+		}
