@@ -3,17 +3,18 @@ div{
 }
 
 body{
-
-    background: #FADBD8  ;   
-    background: -webkit-linear-gradient(90deg, #FADBD8 ,#D0ECE7); 
+    background: white ;   
+    animation-name: back;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: center;
 }
-
 p{
-	font-family:Futura;
+	font-family:serif;
 	letter-spacing:3pt;
 	line-height:70pt;
 	font-size: 14px;
-	margin-bottom:500px;
+	margin-bottom:200px;
 	padding: 20px;
 	opacity:0.8;
 	color:#272727;
@@ -21,27 +22,84 @@ p{
 	z-index: auto;
 }
 h1{
-	font-family:Futura;
-	text-transform:uppercase;
-	font-size: 16px;
-	text-align: left;
-	color:#272727;
-	z-index: auto;
-				}
+	display: block;
+	text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 50px;
+	
+    color: #272727;
+    font-family: 'Anno';
+    font-size: 30;
 
+				}
+.textshadow .blurry-text {
+   text-shadow: 0 0 32px #272727;
+   color: transparent;
+}
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.textshadow .blurry-text {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+		.box{
+		background: white;
+
+		  width: 2px;
+		 
+          height: 300px;
+		  margin: 105px;
+		  opacity:0.3;
+
+		}
 .gold-box { 
   transition:height 3s ease;
   position: fixed;
-  z-index: 1; 
-  background: white;
+  background: #FADBD8  ;   
+    background: -webkit-linear-gradient(90deg,white,transparent); 
   width: 150%;
-  left: 60px;
-  top: 2em;
-  opacity: 0.5;}
+  height: 900px;
+ 
+  opacity: 0.7;}
 
-.gold-box:hover{
-	height: 680px;
+@keyframes back{
+	0%{background-color: #FDEBD0;}
+	50%{background-color: #FADBD8;}
+	100%{background-color: #D0ECE7;}
 }
 
+.heart {
+  background-color: white;
+  display: inline-block;
+  height: 30px;
+  margin-top: 100px;
+  margin-right:180px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  opacity:0.5;
+}
 
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
 
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}

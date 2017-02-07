@@ -1,10 +1,10 @@
 
 
 		p{
-		color: black;
+		color: #C0392B;;
 		font-family: Helvetica; 
 		font-weight: bold; 
-		font-size: 24px; 
+		font-size: 40px; 
 		text-transform: lowercase; 
 		text-align: left;	
 		text-decoration: underline;
@@ -12,16 +12,23 @@
 		
 		h1{
 			font-size: 1em;
-			color:#ABEBC6;}
+			color:white;}
 		}
 		.spacing{padding:6px 10px;}
 
 		.box {
-		  background: #52BE80;
+		  background: #C0392B;
 		  width: 100px;
-		  height: 700px;
-		  margin: 200px;
+		  height: 900px;
+		  margin: 100px;
 		  color: white;
+		}
+		.box1{
+			 background: #C0392B;
+		  width: 90px;
+		  height: 10px;
+		  margin: 105px;
+
 		}
 		#one {
 		  position: fixed;

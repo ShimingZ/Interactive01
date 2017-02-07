@@ -1,50 +1,101 @@
-* {
-	box-sizing: border-box;
-}
-
-
 h1{
-	margin-right: 200px;
-	width: 90%;
-	text-align: left;
-	font-size: 20px;
-	color: black;
-	letter-spacing:5px;
-	text-align: right;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 60px, Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #edb6b6 , 0 0 70px #ea9898 , 0 0 80px #d38f8f , 0 0 100px #e06464 ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+h1:hover {
+text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(247,212,212,1) , 0 0 30px rgba(242,147,147,1) , 0 0 40px #990606 , 0 0 70px #820505 , 0 0 80px #840000 , 0 0 100px #ba0000 ;
+}
 
 body{
 
-	background-color:white;
+	background-color:#FFF7F7;
+	color: #C0392B;
+
 }
 
-
-p{
-	width: 90%;
+.main{	
 	margin: 50px;
-	font-size:50px;
-	line-height: 3em;
-	color:#85929E;
-	font-family: verdana;
-	text-decoration: underline;
-	opacity: 0.4;
+	overflow: auto;
+	text-align: center;
+}
+
+.main1{	
+	margin: 28px;
+	height: 30px;
+	overflow: auto;
+	text-align: center;
+	font-size: 24px;
 }
 
 
 
+.container {
+  margin: 100px;
+}
 
-		.right{
-			text-align: right;
-			padding: 40px;
-		}
-		.info{
-		text-align: left;
-		width: 90%;
-		margin: 90px;
-		font-size: 20px;
-		color: black;
-		letter-spacing:5px;
-		font-style: serif;
-		text-decoration: line-through;
-		}
+.circle, .circle0, .circle1, .circle2, .circle3, .circle4, .circle5 {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+.container:hover .circle, .container:hover .circle0, .container:hover .circle1, .container:hover .circle2, .container:hover .circle3, .container:hover .circle4, .container:hover .circle5 {
+  transform: translateX(1000px);
+}
+
+.circle0 {
+  background: #C0392B;
+  transition: all 1.7s linear;
+  opacity: 0.2;
+}
+
+.circle1 {
+  background: #C0392B;
+  transition: all 1.3s ease;
+  opacity: 0.4;
+}
+
+.circle2 {
+ background: #C0392B;
+  transition: all 1.5s ease-in;
+  opacity: 0.35;
+}
+
+.circle3 {
+  background: #C0392B;
+  transition: all 1.2s ease-out;
+  opacity: 0.4;
+}
+
+.circle4 {
+  background: #C0392B;
+  transition: all 1.6s ease-in-out;
+  opacity: 0.3;
+}
+
+.circle5 {
+  background: #C0392B;
+  transition: all 1.4s cubic-bezier(0, 1, 0.98, 0);
+  opacity: 0.25;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
