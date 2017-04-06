@@ -7,23 +7,25 @@ body {
 .decorative{
 	position:absolute;
 	top:45%;
-	left: 15%;
+	left:8px;
 	width: 100%;
 }
 
 #square{
-	width: 400px;
-	height:400px;
-	background: rgba(0,0,255,0.5);
+	width:690px;
+	height:500px;
+	background:#F39C12;
 	display: inline-block;
-	margin-right: 15%;
+	opacity:0.5;
+	margin-right: 10px;
 }
 
 #circle{
-	width: 400px;
-	height:400px;
-	background: rgba(0,0,255,0.5);
+	width: 500px;
+	height:500px;
+	background:#F39C12;
 	border-radius: 200px;
+	opacity:0.5;
 	display: inline-block;
 }
 
@@ -56,39 +58,43 @@ body {
 @media screen and (max-width: 768px) {
 
   /* text */
-	h1{
-	font-family: sans-serif;
-	color:red;
-	}
-
-	h2{
-	font-family: sans-serif;
-	}
-
 	h3{
 	font-family: sans-serif;
+	color:#F39C12;
+	}
+
+	h1{
+	font-family: sans-serif;
+	color: #58D68D;
+	}
+
+	h5{
+	font-family: sans-serif;
+	color: #58D68D;
 	}
 
   /* image */
 	img{
-	width:50%;
-	margin-right: auto;
+	width:40%;
+	margin-right:auto;
 	margin-left:auto;
   	}
 
   	#square{
 	width: 200px;
 	height:200px;
-	background: rgba(0,0,255,0.5);
-	border-radius: 100px;
+	background:#F39C12;
+	border-radius: 50px;
+	opacity:0.5;
 	display: inline-block;
 	}
 
 	#circle{
 	width: 200px;
 	height:200px;
-	background: rgba(0,0,255,0.5);
-	border-radius: 100px;
+	background:#F39C12;
+	border-radius: 50px;
+	opacity:0.5;
 	display: inline-block;
 	}
 
