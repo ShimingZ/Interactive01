@@ -28,15 +28,9 @@ function draw() {
     background(255);
 
     var ang1 = radians(angle1);
-    var x1 = 10+(scalar*cos(ang1));
     
-    
-    
-    // create a varible for scaling image
-    var imgScale = 0.1;
-    
-    // display image 1 at a scaled size with the original propotion
-    image(img6, x-205, y-300, windowWidth, windowHeight);
+
+    image(img6, 0, 0, width, height);
   
     image(img0, x1-30, y-190, 419,600);
     image(img1, x1+335, y+60, 50,52);
@@ -51,19 +45,18 @@ function draw() {
     x = x + xspeed;
     y = y + yspeed;
     
-    // boundry
-    if (x > 100 || x < 50) {
-        xspeed = xspeed * -1;
-    }
-    if (y > 150 || y < 100) {
-        yspeed = yspeed * -1;
-    }
-    angle1 += 0.3;
+    boundary();
+
+    console.log(y);
+
 }
 
 
 
 function mousePressed() {
+     yspeed *= 10;
+     xspeed *= 10;
+
  if ( song.isPlaying() ) { // .is Playing() returns a boolean
    song.stop();
     background(255);
@@ -71,4 +64,21 @@ function mousePressed() {
   song.play();
 background(255);
    }
+}
+
+function mouseReleased (){
+  xspeed *= 1/10;
+  yspeed *= 1/10;
+}
+
+
+function boundary(){
+    // boundary
+    if (x < 100 || x > width-100) {
+        xspeed = xspeed * -1;
+    }
+    if (y < 100 || y > height-100) {
+        yspeed = yspeed * -1;
+    }
+   
 }

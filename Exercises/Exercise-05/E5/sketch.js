@@ -6,8 +6,6 @@ var yspeed = .5;
 var angle1 = 0;
 var scalar = 70;
 
-
-
 function preload() {
     img1 = loadImage("assets/Asset1.png");
 }
@@ -18,36 +16,39 @@ function setup() {
 }
 function draw() {
    background(255);
-    moveC(250);
-    console.log("drawing C");
-  
-    if(mouseIsPressed){
-             moveC(600);
 
-    }
+   var ang1 = radians(angle1);
+    imageMode(CENTER);
+    image(img1, x, y, 300,310);
+      // update location
+  
+    x = x + xspeed;
+    y = y + yspeed;
+    
+    boundary();
+
+    console.log(y);
+
+
+}
+function mousePressed(){
+            yspeed *= 10;
+            xspeed *= 10;
+}
+function mouseReleased (){
+  xspeed *= 1/10;
+  yspeed *= 1/10;
 }
 
 
-function moveC(y){
-   var ang1 = radians(angle1);
-     var x1 = 10+(scalar*cos(ang1));
-    
-    image(img1, x1+400, y, 300,310);
-      // update location
-  
-    x1 = x1 + xspeed;
-    y = y + yspeed;
-    
-    // boundry
-    if (x1 > 100 || x1 < 50) {
-        xspeed = xspeed * 0;
+function boundary(){
+    // boundary
+    if (x < 100 || x > width-100) {
+        xspeed = xspeed * -1;
     }
-    if (y > 150 || y < 100) {
+    if (y < 100 || y > height-100) {
         yspeed = yspeed * -1;
     }
-    angle1 += 0.3;
-    
-print(x1 + " "+ "x1 value");
    
 }
 
