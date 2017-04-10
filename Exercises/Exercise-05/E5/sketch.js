@@ -7,7 +7,7 @@ var angle1 = 0;
 var scalar = 70;
 
 function preload() {
-    img1 = loadImage("assets/Asset5.png");
+    img = loadImage("assets/Asset5.png");
 }
 
 function setup() {
