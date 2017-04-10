@@ -17,7 +17,7 @@ function setup() {
 function draw() {
    background(255);
 
-   var ang1 = radians(angle1);
+   //var ang1 = radians(angle1);
     imageMode(CENTER);
     image(img1, x, y, 300,310);
       // update location
