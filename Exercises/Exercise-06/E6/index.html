@@ -1,0 +1,152 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+      <style>
+          #draggable1,#draggable2,#draggable3,#draggable4,#draggable5{
+                font-size: 12px;
+                position: relative;
+                text-align: center;
+                padding: 0.8em;
+                width: 500px;
+                color: #52BE80;
+
+            }
+            
+            
+         #droppable1,#droppable2,#droppable3,#droppable4,#droppable5{
+              margin-left: 200px;
+              width: 500px;
+              background-color: #ffffff;
+              border: #52BE80 3px dashed;
+              text-align: right;
+              }
+
+         #draggable2:hover{
+          cursor: -webkit-zoom-in;
+          cursor: zoom-in;        
+
+         }
+
+         #draggable3:hover{
+          cursor: -webkit-zoom-out;
+          cursor: zoom-out;
+          
+         }
+
+        .zoomin{
+          font-size: 1.5em;
+         }
+         .zoomout{
+          font-size: 0.5em;
+         }
+
+        .color { 
+          color: #52BE80;;
+        }
+
+        .blurry-text {
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+      </style>
+
+      <script>
+
+        $(function(){
+          $('#draggable1').draggable();
+          $('#droppable1').droppable({
+            drop: function(event, ui){
+              $(this)
+              .find("p")
+              .html("Dropped !")
+            }
+          });
+
+          $('#draggable2').draggable({ revert: "valid" });
+          $('#droppable2').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass("zoomin")
+            }
+          });
+
+          $('#draggable3').draggable({ revert: "valid" }); 
+          $('#droppable3').droppable({
+           drop: function(event, ui){
+              $(this)
+              .addClass("zoomout")
+            }
+          });
+
+          $('#draggable4').draggable({ revert: "valid" });
+          $('#droppable4').droppable({          
+            drop: function(event, ui){
+              $(this)
+              .addClass("color")
+            }
+          });
+
+          $('#draggable5').draggable();
+          $('#droppable5').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass("blurry-text ")
+            }
+          });
+        });
+
+      </script>
+  </head>
+
+  <body>
+
+    <div id= "draggable1">
+      <p> Drag me ! </p>
+    </div>
+        
+        <div id= "droppable1" class="ui-widget-header">
+          <p> Hello！ </p>
+        </div>
+        
+        <div id= "draggable2" >
+      <p> Drag me ~ </p>
+    </div>
+        
+        <div id= "droppable2" class="ui-widget-header">
+          <p> Bonjour ~ </p>
+        </div>
+        
+        <div id= "draggable3" >
+      <p> Drag me。 </p>
+    </div>
+        
+        <div id= "droppable3" class="ui-widget-header">
+          <p> 你好。</p>
+        </div>
+        
+        <div id= "draggable4" >
+      <p> Drag me？ </p>
+    </div>
+        
+        <div id= "droppable4" class="ui-widget-header">
+        <p>お元気ですか？</p>
+        </div>
+        
+        <div id= "draggable5">
+      <p> Drag me * </p>
+    </div>
+
+        <div id= "droppable5" class="ui-widget-header">
+          <p> 안녕하세요 *</p>
+        </div>
+
+  </body>
+</html>
