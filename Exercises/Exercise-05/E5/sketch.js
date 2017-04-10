@@ -7,7 +7,7 @@ var angle1 = 0;
 var scalar = 70;
 
 function preload() {
-    img = loadImage("assets/Asset5.png");
+    img1 = loadImage("assets/Asset1.png");
 }
 
 function setup() {
@@ -17,7 +17,7 @@ function setup() {
 function draw() {
    background(255);
 
-    image(img1, x, y, 300,250);
+    image(img1, x, y, 300,310);
   
     x = x + xspeed;
     y = y + yspeed;
