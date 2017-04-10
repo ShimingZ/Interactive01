@@ -26,10 +26,7 @@ function setup() {
 }
 function draw() {
     background(255);
-
-    //var ang1 = radians(angle1);
     
-
     image(img6, 0, 0, width, height);
   
     image(img0, 30, 70, 419,600);
