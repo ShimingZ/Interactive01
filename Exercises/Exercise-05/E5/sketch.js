@@ -17,10 +17,7 @@ function setup() {
 function draw() {
    background(255);
 
-   //var ang1 = radians(angle1);
-    imageMode(CENTER);
     image(img1, x, y, 300,310);
-      // update location
   
     x = x + xspeed;
     y = y + yspeed;
@@ -42,7 +39,6 @@ function mouseReleased (){
 
 
 function boundary(){
-    // boundary
     if (x < 100 || x > width-100) {
         xspeed = xspeed * -1;
     }
