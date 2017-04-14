@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			var myVideo = document.getElementById("beachy");
+
+				myVideo.pause();
+
+				$("#doorbell")[0].play();
+		/*
+				var dogAudio = $("#bark")[0];
+				dogAudio.play();
+		*/
+				var dogAudio = $("#bark")[0];
+				$("#box1").mouseenter(function(){
+					dogAudio.play();
+					myVideo.play();
+				});
+
+				$("#box1").mouseout(function(){
+					myVideo.pause();
+				});
+
+				$("#click").click(function(){
+					$("#beachy").clone().appendTo("#box1");	
+				});
+				
+			});
+
+		</script>
+
+		<style>
+			#box1{
+				width: 400px;
+				height: 255px;
+				margin-left: 300px;
+				margin-top: 100px;
+				background-image: url(assets/IMG1.JPG);
+				background-repeat: no-repeat;
+			}
+
+			#beachy{
+				width: 400px;
+				margin-left: 300px;
+
+			}
+		</style>
+	</head>
+
+	<body>
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <audio controls>
+			<source src="assets/horse.ogg" type="audio/ogg">
+		</audio>
+
+		<div id="box1">
+		</div>
+
+		<audio id= "doorbell">
+			<source src="assets/doorbell.mp3" type="audio/mp3">
+		</audio>
+
+
+<!--
+		<audio autoplay>
+			<source src="assets/meow.wav" type="audio/wav">
+		</audio>
+-->
+
+		<audio id="bark">
+			<source src="assets/bark.wav" type="audio/wav">
+		</audio>
+
+		<video id="beachy" autoplay>
+			<source src="assets/M1.mp4">
+			Sorry, your browser doesn't support HTML5 video :(
+		</video>
+
+		<a id="click">Click me!</a>
+	</body>
+</html>
