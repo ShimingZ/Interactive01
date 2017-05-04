@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+	  body {
+	  	margin: 0;
+	  }
+
+  	button {
+  		padding: 5px;
+  		margin: 4px;
+  		font-size: 1.0em;
+  		cursor: pointer;
+      
+  	}
+
+  	.nav {
+  		position: fixed;
+      right: 0px;
+  		top:300px;
+      width: 55px;
+  		background-color: white;
+  		padding: 11px;
+      opacity: 0.6;
+  	}
+
+    .box {
+    	height: 700px;
+    	color: #FFF;
+    	background-size: cover;
+    	background-position: center;
+    	text-align: right;
+      letter-spacing: 1px;
+      font-size: 30px;
+      font-family: sans-serif;;
+    	padding: 40px;
+
+    }
+
+    .s1 {background-image: url('assets/1.jpg');}
+    .s2 {background-image: url('assets/2.jpg');}
+    .s3 {background-image: url('assets/3.jpg');}
+    .s4 {background-image: url('assets/4.jpg');}
+    .s5 {background-image: url('assets/5.jpg');}
+
+  </style>
+
+  <script>
+
+  	$(document).ready(function(){
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s2").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s3").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s4").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s5").offset().top
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+
+  	});
+    
+  </script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">1</button><br />
+		<button id="btn-s2">2</button><br />
+		<button id="btn-s3">3</button><br />
+		<button id="btn-s4">4</button><br />
+		<button id="btn-s5">5</button><br />
+	</div>
+  
+  <div class="box s1">
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+
+  	 1
+  </div>
+  
+  <div class="box s2">
+    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+  	2
+  </div>
+  
+  <div class="box s3">
+    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+  	3
+  </div>
+  
+  <div class="box s4">
+    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+  	 4
+  </div>
+  
+  <div class="box s5">
+    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+  	 5
+  </div>
+
+</body>
+</html>
