@@ -1,12 +1,12 @@
 /*=====FONTS=====*/
 @font-face {
   font-family: 'quicksandlight';
-  src: url("../_fonts/webfontkit-20170110-050701/quicksand-light-webfont.woff2") format("woff2"), url("../_fonts/webfontkit-20170110-050701/quicksand-light-webfont.woff") format("woff");
+  src: url("../fonts/webfontkit-20170110-050701/quicksand-light-webfont.woff2") format("woff2"), url("../fonts/webfontkit-20170110-050701/quicksand-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'quicksandregular';
-  src: url("../_fonts/webfontkit-20170110-050701/quicksand-regular-webfont.woff2") format("woff2"), url("../_fonts/webfontkit-20170110-050701/quicksand-regular-webfont.woff") format("woff");
+  src: url("../fonts/webfontkit-20170110-050701/quicksand-regular-webfont.woff2") format("woff2"), url("../fonts/webfontkit-20170110-050701/quicksand-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /*BASKERVILLE*/
@@ -14,34 +14,34 @@
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: normal;
-  src: local("Libre Baskerville"), url("../_fonts/baskerville/LibreBaskerville-Regular.woff") format("woff"); }
+  src: local("Libre Baskerville"), url("../fonts/baskerville/LibreBaskerville-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'Libre Baskerville Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Libre Baskerville Bold"), url("../_fonts/baskerville/LibreBaskerville-Bold.woff") format("woff"); }
+  src: local("Libre Baskerville Bold"), url("../fonts/baskerville/LibreBaskerville-Bold.woff") format("woff"); }
 @font-face {
   font-family: 'Libre Baskerville Italic';
   font-style: normal;
   font-weight: normal;
-  src: local("Libre Baskerville Italic"), url("../_fonts/baskerville/LibreBaskerville-Italic.woff") format("woff"); }
+  src: local("Libre Baskerville Italic"), url("../fonts/baskerville/LibreBaskerville-Italic.woff") format("woff"); }
 /*AVENIR_NEXT*/
 @font-face {
   font-family: 'Avenir Next LT Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Regular"), url("../_fonts/avenir_next/AvenirNextLTPro-Regular.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Regular"), url("../fonts/avenir_next/AvenirNextLTPro-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'Avenir Next LT Pro Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Bold"), url("../_fonts/avenir_next/AvenirNextLTPro-Bold.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Bold"), url("../fonts/avenir_next/AvenirNextLTPro-Bold.woff") format("woff"); }
 /*FUTURA*/
 @font-face {
   font-family: 'Futura Md BT Medium';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura Md BT Medium"), url("../_fonts/futura/futura_medium_bt-webfont.woff") format("woff"); }
+  src: local("Futura Md BT Medium"), url("../fonts/futura/futura_medium_bt-webfont.woff") format("woff"); }
 html, body {
   /*background:black;*/
 
