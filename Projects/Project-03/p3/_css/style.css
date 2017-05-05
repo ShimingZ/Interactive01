@@ -269,7 +269,7 @@ a{
 
   #section_15
 {
-     background: url("../img/k.gif") repeat center center fixed; 
+  background: url("../img/k.gif") repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -277,7 +277,7 @@ a{
 }
 
 #section_15 h1 {
-  color: #121526; }
+  color: #D5DBDB;}
 
 #section_15 h1 span {
   float: left;
@@ -293,10 +293,7 @@ a{
     -webkit-animation:colorchange 20s infinite alternate;arent); 
   opacity: 0.7;}
    @-webkit-keyframes colorchange {
-          0% {
-        
-        color: #F2F4F4;
-      }
+      0% { color: #D5DBDB; } 
 
       10% {
         
@@ -311,8 +308,7 @@ a{
       }
       
       40%{ color: #D5DBDB; } 
-      50% {
-        
+      50% { 
         color: #F5B7B1;
       }
       60%{ color: #D5DBDB; } 
