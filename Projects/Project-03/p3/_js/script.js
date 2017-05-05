@@ -1,5 +1,5 @@
 
-var fadeInDivDown = ["#section_5 .portraitImg","#section_14"];
+var fadeInDivDown = ["#section_5 .portraitImg", "#section_5 .portraitText","#section_14"];
 
 var scrollDivUp = ["#section_3"];
 

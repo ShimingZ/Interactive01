@@ -241,15 +241,19 @@ a{
   color: #000; }
 
 #section_3 {
-  margin-top: 15vh;
+  margin-top: 20vh;
   background: url("../img/cat.gif");
-  background-size: 500px 282px;
+  background-size: 600px 382px;
   background-position: center;
   background-repeat: no-repeat;
 
  }
 #section_5 {
-  padding-top: 500px; }
+  padding-top: 400px;
+  font-family: 'quicksandregular';
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 45px; }
 
 
 
@@ -260,7 +264,8 @@ a{
 
 
 #section_5 .portraitText span {
-  left: -35px;}
+  left: -35px;
+  ;}
 
 
 #section_14 {
