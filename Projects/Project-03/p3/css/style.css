@@ -100,9 +100,9 @@ a{
 }
 
 .fullLongBox {
-  height: 80vh;
+  height: 5vh;
   width: 90%;
-  margin: 10vh 5%;
+  margin: 0vh 5%;
   /*background:url('../_img/p3_fullbody.jpg');
   background-size: cover;
   background-position: center;*/
@@ -202,11 +202,12 @@ a{
 
 .portraitText {
   font-size: 16px;
+  line-height: 24px;
   float: left;
   width: 42.5%;
   height: 25%;
   margin-left: 5%;
-  margin-top: 50vh;}
+  margin-top: 26vh;}
 
 .portraitText p {
   font-family: 'quicksandregular';
